@@ -1,7 +1,7 @@
 <template>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <mdb-btn color="primary">Button</mdb-btn>
+            <mdb-btn color="primary">Button1221</mdb-btn>
         </div>
     </div>
 </template>

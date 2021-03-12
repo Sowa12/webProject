@@ -13,8 +13,18 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="blog" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="C:/" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -137,7 +147,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -157,6 +169,12 @@
       <updated>1614576774559</updated>
       <workItem from="1614576816998" duration="1263000" />
       <workItem from="1614578444607" duration="802000" />
+      <workItem from="1615012250295" duration="3180000" />
+      <workItem from="1615016476350" duration="2650000" />
+      <workItem from="1615019527903" duration="1778000" />
+      <workItem from="1615566551313" duration="1739000" />
+      <workItem from="1615575060427" duration="4001000" />
+      <workItem from="1615579388781" duration="526000" />
     </task>
     <servers />
   </component>
@@ -164,9 +182,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1614578454829">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1615579940028">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1614578454829" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1615579940028" />
+    <state x="602" y="145" key="SettingsEditor" timestamp="1615574870564">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="602" y="145" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1615574870564" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1615579660165">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1615579660165" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1615579388773">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1615579388773" />
   </component>
 </project>
