@@ -24,6 +24,7 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('example-test', require('./components/test.vue').default);
 Vue.component('my-body', require('./components/body.vue').default);
+
 /**s
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

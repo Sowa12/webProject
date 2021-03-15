@@ -46,7 +46,7 @@
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <form>
+                    <form action="" method="post">
                         <div class="form-group row">
                             <div class="col-sm-5">
                                 <input type="text" class="form-control"  placeholder="Фамилия">
@@ -114,6 +114,7 @@
                                 <label class="form-check-label" >Пластик3</label>
                             </div>
                         </div>
+                        <button type="submit" class="btn btn-success">Заказ</button>
                     </form>
                 </div>
             </div>

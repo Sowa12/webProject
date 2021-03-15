@@ -1854,6 +1854,83 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -1903,6 +1980,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _body__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./body */ "./resources/js/components/body.vue");
+//
 //
 //
 //
@@ -38494,16 +38572,216 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container mt-5" }, [
-    _c(
-      "div",
-      { staticClass: "row justify-content-center" },
-      [_c("mdb-btn", { attrs: { color: "primary" } }, [_vm._v("Button1221")])],
-      1
-    )
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "basicModal",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "basicModal",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c("div", { staticClass: "modal-dialog" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "modal-header" }, [
+              _c(
+                "h4",
+                { staticClass: "modal-title", attrs: { id: "myModalLabel" } },
+                [_vm._v("Оформить заказ ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "close",
+                  attrs: {
+                    type: "button",
+                    "data-dismiss": "modal",
+                    "aria-label": "Close"
+                  }
+                },
+                [
+                  _c("span", { attrs: { "aria-hidden": "true" } }, [
+                    _vm._v("×")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("form", { attrs: { action: "/submit", method: "post" } }, [
+              _c("div", { staticClass: "form-group row" }, [
+                _c("div", { staticClass: "col-sm-5" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Фамилия" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-5" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Имя" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "email", placeholder: "Email" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", [
+                  _vm._v("Заполните текст заказа и выберите услуги:")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "Введите текст заказа" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", [_vm._v("Прикрепить файл")]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control-file",
+                  attrs: { type: "file", id: "exampleFormControlFile1" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Размеры" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Материал" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Тип работы" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Размеры" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox" }
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Пластик1")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox" }
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Худож")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Размеры" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox" }
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Пластик2")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox" }
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Инженер")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group row" }, [
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "Размеры" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("input", {
+                    staticClass: "form-check-input",
+                    attrs: { type: "checkbox" }
+                  }),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _vm._v("Пластик3")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                { staticClass: "btn btn-success", attrs: { type: "submit" } },
+                [_vm._v("Заказ")]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -38578,7 +38856,7 @@ var staticRenderFns = [
                 src:
                   "https://cdn.pixabay.com/photo/2014/04/02/17/01/logo-307673_1280.png",
                 width: "30",
-                height: "30 alt="
+                height: "30"
               }
             })
           ]),
@@ -38711,7 +38989,7 @@ var staticRenderFns = [
                 )
               ]),
               _vm._v(" "),
-              _c("form", [
+              _c("form", { attrs: { action: "", method: "post" } }, [
                 _c("div", { staticClass: "form-group row" }, [
                   _c("div", { staticClass: "col-sm-5" }, [
                     _c("input", {
@@ -38860,7 +39138,13 @@ var staticRenderFns = [
                       _vm._v("Пластик3")
                     ])
                   ])
-                ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-success", attrs: { type: "submit" } },
+                  [_vm._v("Заказ")]
+                )
               ])
             ])
           ])
