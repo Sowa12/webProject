@@ -1,6 +1,8 @@
 @extends('layouts.main')
 @section('content')
+    <!-- Главная страница-->
 <div class="container">
+    <!--Панель навигации-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="https://cdn.pixabay.com/photo/2014/04/02/17/01/logo-307673_1280.png" width="30" height="30">
@@ -32,6 +34,7 @@
             </a>
         </div>
     </nav>
+    <!-- Тело главной страницы-->
     <main class="card-body">
         <div class="text-center">
             Услуги печати
@@ -47,6 +50,17 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
+                <!-- Вывод ошибок при заполнение полей модального окна-->
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <!-- Форма заказа модального окна-->
                 <form action="{{route('submit-form')}}" method="post">
                     @csrf
                     <div class="form-group row">
