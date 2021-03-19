@@ -1,9 +1,12 @@
 @extends('layouts.main')
 @section('content')
     <!-- Главная страница-->
+    <img src="../images/1.png" class="img-fluid">
+
+
 <div class="container">
     <!--Панель навигации-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="col-sm-12 navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="https://cdn.pixabay.com/photo/2014/04/02/17/01/logo-307673_1280.png" width="30" height="30">
         </a>
@@ -12,7 +15,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <img src="https://www.kindpng.com/picc/m/82-822881_home-icons-windows-house-icon-transparent-png-png.png" width="30" height="30" alt="">
+            <img src="https://www.flaticon.com/svg/vstatic/svg/1946/1946488.svg?token=exp=1616146227~hmac=6671fefce2d473a472feadf9211071fb" width="30" height="30" alt="">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -36,8 +39,81 @@
     </nav>
     <!-- Тело главной страницы-->
     <main class="card-body">
-        <div class="text-center">
-            Услуги печати
+        <div class="col-sm-12 panel-element mt-5 mb-5">
+            <div class="mt-5 mb-5 pt-3 pb-3">
+                Услуги 3D моделирования и печати
+            </div>
+        </div>
+        <div class="col-sm-12 rounded content-menu mt-5">
+            <div class="text-center row">
+                <div class="align-content-center col-sm-12">
+                    <h1 class="mb-2 mt-2">Технология FDM печати</h1>
+                </div>
+                <div class="align-content-center col-sm-12">
+                    <p>Послойное наплавнение пластиков и композитов, описание тех.процесса</p>
+                </div>
+                <div class="align-content-center col-sm-10">
+                    <p>Бла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процессаБла бла бла описание тех процесса</p>
+                </div>
+                <div class="align-content-center col-sm-4">
+                    <img src="../images/2.png">
+                </div>
+                <div class="align-content-center col-sm-4">
+                    <img src="../images/3.png">
+                </div>
+                <div class="align-content-center col-sm-4">
+                    <img src="../images/4.png">
+                </div>
+            </div>
+            <div class="text-center row grey-color-fantastyk">
+                <div class="align-content-center col-sm-12">
+                    <h1 class="mb-2 mt-2">ЗАКАЗАТЬ УСЛУГИ</h1>
+                </div>
+                <div class="align-content-center col-sm-10">
+                    <p>Описание заказа услуг бла бла бла Описание заказа услуг бла бла бла Описание заказа услуг бла бла бла Описание заказа услуг бла бла бла Описание заказа услуг бла бла блаОписание заказа услуг бла бла блаОписание заказа услуг бла бла бла</p>
+                </div>
+                <div class="align-content-center col-sm-4">
+                    <img src="../images/5.png">
+                </div>
+                <div class="align-content-center col-sm-4">
+                    <img src="../images/6.png">
+                </div>
+                <div class="align-content-center col-sm-4">
+                    <img src="../images/7.png">
+                </div>
+            </div>
+            <div class="text-center row">
+                <div class="align-content-center col-sm-12">
+                    <h1 class="mb-2 mt-2">Продукция</h1>
+                </div>
+                <div class="align-content-center col-sm-12">
+                    <p>ОПИСАНИЕ продукции и компаний бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла</p>
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/8.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/9.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/10.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/11.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/12.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/13.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/14.png">
+                </div>
+                <div class="align-content-center col-sm-3">
+                    <img src="../images/15.png">
+                </div>
+            </div>
         </div>
     </main>
     <!-- Модальное окно-->

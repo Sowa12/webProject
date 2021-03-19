@@ -1,0 +1,21 @@
+
+.panel-element {
+    color: white;
+    text-align: center;
+    background-color: rgba(39,47,51, 0.5);
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content-menu {
+    background-color: white;
+    min-height: 1000px;
+}
+
+.grey-color-fantastyk {
+    background-color: #EBEBEB;
+}
