@@ -107,7 +107,6 @@
                 <a name="Prodact"></a>
                 <div class="text-center row pt-3 pb-5 justify-content-center">
                     <div class="align-content-center col-sm-12">
-
                         <h1 class="mb-2 mt-2">Продукция</h1>
                     </div>
                     <div class="align-content-center mt-3 col-sm-10">
@@ -144,10 +143,19 @@
                     </div>
                 </div>
                 <section class="container grey-color-fantastyk mt-5 pt-3 pb-5 text-center">
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <div class="row grey-color-fantastyk offset-1" >
                         <!-- Контактная форма -->
                         <a name="Ob_swaz"></a>
-                        <form class="col-5" method="post" action="{{route('contact-form')}}">
+                        <form  class="col-5" method="post" action="{{route('contact-form')}}">
                             <h2>Контактная форма</h2>
                             @csrf
                             <div class="row">

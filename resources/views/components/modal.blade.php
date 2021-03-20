@@ -5,7 +5,7 @@
             <div class="modal-header">
                 <h4 class="modal-title offset-md-1" id="myModalLabel">Оформить заказ </h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">×</span>php
                 </button>
             </div>
             <!-- Вывод ошибок при заполнение полей модального окна-->
@@ -19,7 +19,7 @@
                 </div>
         @endif
         <!-- Форма заказа модального окна-->
-            <form action="{{route('submit-form')}}" method="post" class="offset-md-1" style="margin-top: 5px">
+            <form enctype="multipart/form-data" action="{{route('submit-form')}}" method="post" class="offset-md-1" style="margin-top: 5px">
                 @csrf
                 <div class="form-group row">
                     <div class="col-sm-5">

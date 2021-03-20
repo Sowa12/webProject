@@ -19,6 +19,11 @@ class ModalWController extends Controller {
         $modalW->length         = $req->input('length');
         $modalW->width          = $req->input('width');
         $modalW->fileName       = $req->input('fileName');
+        foreach ($req->file() as $file) {
+            foreach ($file as $f) {
+                $f->move(storage_path('C:\\'), time().'_'.$f->getClientOriginalName());
+            }
+        }
         $modalW->save();
 
         return redirect()->route('home-page');
