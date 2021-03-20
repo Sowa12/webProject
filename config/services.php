@@ -1,6 +1,6 @@
 <?php
 
-return [
+return array(
 
     /*
     |--------------------------------------------------------------------------
@@ -13,21 +13,25 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+    'telegram-bot-api' => array(
+        'token' => env('TELEGRAM_BOT_TOKEN', '1614157664:AAFfSWO7yVUn4AoP89agHRNKtuZojYYeiBw'),
+    ),
 
-    'mailgun' => [
+    'mailgun' => array(
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
-    ],
+    ),
 
-    'postmark' => [
+    'postmark' => array(
         'token' => env('POSTMARK_TOKEN'),
-    ],
+    ),
 
-    'ses' => [
+    'ses' => array(
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
-    ],
+    ),
 
-];
+
+);

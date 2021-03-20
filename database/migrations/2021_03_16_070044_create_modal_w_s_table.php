@@ -19,6 +19,13 @@ class CreateModalWSTable extends Migration
             $table->string('secoundName');
             $table->string('email');
             $table->text('text');
+            $table->string("workType");
+            $table->string('matType');
+            $table->integer('width');
+            $table->integer('length');
+            $table->integer('height');
+            $table->string('fileName');
+
             $table->timestamps();
         });
     }
