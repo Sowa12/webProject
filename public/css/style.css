@@ -1,10 +1,7 @@
 .imagination-position-aniligalation {
     position: absolute;
-    z-index: -1;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%; 
-    background-size: 100%;
+    z-index: -10;
+  width: 100%;
 }
 
 .panel-element {
@@ -22,6 +19,7 @@
 .content-menu {
     background-color: white;
     min-height: 1000px;
+    margin-top: 12rem;
 }
 
 .grey-color-fantastyk {

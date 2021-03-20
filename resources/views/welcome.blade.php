@@ -48,9 +48,10 @@
                 <div class="mt-5 mb-5 pt-3 pb-3">
                     Услуги 3D моделирования и печати
                 </div>
-                <a name="op_tech"></a>
+
             </div>
-            <div class="col-sm-12 rounded content-menu mt-5">
+            <div class="col-sm-12 rounded content-menu">
+                <a name="op_tech"></a>
                 <div class="text-center row mt-5 mb-5 pt-3 pb-5 justify-content-center">
                     <div class="align-content-center col-sm-12" >
 
