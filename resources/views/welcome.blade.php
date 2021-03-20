@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <!-- Главная страница-->
-    <img src="../images/1.png" class="img-fluid">
+    <img src="/images/1.png" class="img-fluid">
 
     <div class="container">
         <!--Панель навигации-->
