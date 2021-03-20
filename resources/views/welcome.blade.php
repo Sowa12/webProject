@@ -6,7 +6,7 @@
 
 <div class="container">
     <!--Панель навигации-->
-    <nav class="col-sm-12 navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="col-sm-12 navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#">
             <img src="https://cdn.pixabay.com/photo/2014/04/02/17/01/logo-307673_1280.png" width="30" height="30">
         </a>
@@ -45,9 +45,9 @@
             </div>
         </div>
         <div class="col-sm-12 rounded content-menu mt-5">
-            <div class="text-center row">
+            <div class="text-center row mt-5 mb-5 pt-3 pb-5 justify-content-center">
                 <div class="align-content-center col-sm-12">
-                    <h1 class="mb-2 mt-2">Технология FDM печати</h1>
+                    <h1 class="mb-2">Технология FDM печати</h1>
                 </div>
                 <div class="align-content-center col-sm-12">
                     <p>Послойное наплавнение пластиков и композитов, описание тех.процесса</p>
@@ -65,7 +65,7 @@
                     <img src="../images/4.png">
                 </div>
             </div>
-            <div class="text-center row grey-color-fantastyk">
+            <div class="text-center row grey-color-fantastyk mt-5 pt-3 pb-5 justify-content-center">
                 <div class="align-content-center col-sm-12">
                     <h1 class="mb-2 mt-2">ЗАКАЗАТЬ УСЛУГИ</h1>
                 </div>
@@ -82,11 +82,11 @@
                     <img src="../images/7.png">
                 </div>
             </div>
-            <div class="text-center row">
+            <div class="text-center row pt-3 pb-5 justify-content-center">
                 <div class="align-content-center col-sm-12">
                     <h1 class="mb-2 mt-2">Продукция</h1>
                 </div>
-                <div class="align-content-center col-sm-12">
+                <div class="align-content-center col-sm-10">
                     <p>ОПИСАНИЕ продукции и компаний бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла</p>
                 </div>
                 <div class="align-content-center col-sm-3">
@@ -114,6 +114,47 @@
                     <img src="../images/15.png">
                 </div>
             </div>
+            <section class="container grey-color-fantastyk mt-5 pt-3 pb-5 text-center">
+                <div class="row grey-color-fantastyk offset-1">
+                    <!-- Контактная форма -->
+                    <form class="col-5" >
+                        <h2>Контактная форма</h2>
+                        @csrf
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <input type="text" class="form-control" name="name" placeholder="Имя" required>
+                            </div>
+                            <div class="form-group col-sm-5 offset-1">
+                                <input type="text" class="form-control" name="phone" placeholder="Телефон" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Введите сообщение"
+                                      required></textarea>
+                        </div>
+                        <button type="submit" id="form-submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                    <div class="text-center col-5 offset-1">
+                        <h2>Контакты</h2>
+                        <div class="text-left">
+                            <p>     ООО «AutoPatato»
+                            <p>     648400, г. Сургут,
+                            <p>     ул. Пушкина д.Колотушкина
+                            <p>     Директор: Директорский Директор Директорович
+                            <p>     E: fedorchuckvlad@gmail.com
+                            <p>     T: +7(912)513-22-86
+                            <p>     www.autopatato.com/print
+                                Автоматизация тех. процессов
+                            <p>     www.autopatato.com
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <!-- Модальное окно-->
