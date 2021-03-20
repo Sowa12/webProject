@@ -1,3 +1,11 @@
+.imagination-position-aniligalation {
+    position: absolute;
+    z-index: -1;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%; 
+    background-size: 100%;
+}
 
 .panel-element {
     color: white;
@@ -21,5 +29,6 @@
 }
 
 body{
-    background-color: red;
+    background-color: #E0E0E0;
 }
+
