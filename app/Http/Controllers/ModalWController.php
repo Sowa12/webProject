@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\ModalWRequest;
 use App\Models\ModalW;
+use App\Notifications\TelegramModal;
+use Illuminate\Support\Facades\Notification;
 
 class ModalWController extends Controller {
     public function submit(ModalWRequest $req){
@@ -19,13 +21,11 @@ class ModalWController extends Controller {
         $modalW->length         = $req->input('length');
         $modalW->width          = $req->input('width');
         $modalW->fileName       = $req->input('fileName');
-        foreach ($req->file() as $file) {
-            foreach ($file as $f) {
-                $f->move(storage_path('C:\\'), time().'_'.$f->getClientOriginalName());
-            }
-        }
         $modalW->save();
 
+        $file = $req->file('fileName');
+        $path = $file ->store('uploads', 'public');
+        Notification::send($req, new TelegramModal($req));
         return redirect()->route('home-page');
     }
 }

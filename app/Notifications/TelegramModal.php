@@ -1,15 +1,19 @@
 <?php
+
+namespace App\Notifications;
+
 namespace App\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use NotificationChannels\Telegram\TelegramChannel;
+use NotificationChannels\Telegram\TelegramFile;
 use NotificationChannels\Telegram\TelegramMessage;
 use App\Http\Requests\ContactRequest;
 use function Webmozart\Assert\Tests\StaticAnalysis\string;
 
-class Telegram extends Notification
+class TelegramModal extends Notification
 {
     use Queueable;
 
@@ -18,36 +22,37 @@ class Telegram extends Notification
      *
      * @return void
      */
-    public function __construct(ContactRequest $req) {
-
+    public function __construct()
+    {
+        //
     }
+
     /**
      * Get the notification's delivery channels.
      *
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable) {
+    public function via($notifiable)
+    {
         return [TelegramChannel::class];
     }
-    /**
-     * Get the mail representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return \Illuminate\Notifications\Messages\MailMessage
-     */
     /**
      * Get the array representation of the notification.
      *
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable) {
-        return [];
+    public function toArray($notifiable)
+    {
+        return [
+            //
+        ];
     }
+
     public function toTelegram($notifiable)
     {
-        return TelegramMessage::create()
-            ->content("Имя: $notifiable->name\nEmail: $notifiable->email\nНомер телефора: $notifiable->phone\nСообщение: $notifiable->message");
+        return TelegramFile::create()
+            ->content("Имя: $notifiable->firstName\nФамилия: $notifiable->secoundName\nПочта: $notifiable->email\nТип работы: $notifiable->workType\nМатериал: $notifiable->matType\nВысота: $notifiable->height\nДлина: $notifiable->width\nИмя файла: $notifiable->fileName");
     }
 }

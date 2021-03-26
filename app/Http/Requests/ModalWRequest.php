@@ -6,6 +6,10 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class ModalWRequest extends FormRequest
 {
+    public function routeNotificationFor()
+    {
+        return 708121661;
+    }
     /**
      * Determine if the user is authorized to make this request.
      *
