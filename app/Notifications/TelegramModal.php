@@ -52,7 +52,7 @@ class TelegramModal extends Notification
 
     public function toTelegram($notifiable)
     {
-        return TelegramFile::create()
+        return TelegramMessage::create()
             ->content("Имя: $notifiable->firstName\nФамилия: $notifiable->secoundName\nПочта: $notifiable->email\nТип работы: $notifiable->workType\nМатериал: $notifiable->matType\nВысота: $notifiable->height\nДлина: $notifiable->width\nИмя файла: $notifiable->fileName");
     }
 }
