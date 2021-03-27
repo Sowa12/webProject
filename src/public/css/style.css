@@ -1,0 +1,32 @@
+.imagination-position-aniligalation {
+    position: absolute;
+    z-index: -10;
+  width: 100%;
+}
+
+.panel-element {
+    color: white;
+    text-align: center;
+    background-color: rgba(39,47,51, 0.5);
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content-menu {
+    background-color: white;
+    min-height: 1000px;
+    margin-top: 12rem;
+}
+
+.grey-color-fantastyk {
+    background-color: #EBEBEB;
+}
+
+body{
+    background-color: #E0E0E0;
+}
+
